@@ -1,0 +1,26 @@
+export const ACTION_LABELS = {
+  'entry.create': 'Entry created',
+  'entry.update': 'Entry updated',
+  'entry.delete': 'Entry deleted',
+  'entry.publish': 'Entry published',
+  'entry.unpublish': 'Entry unpublished',
+  'media.create': 'Media uploaded',
+  'media.update': 'Media updated',
+  'media.delete': 'Media deleted',
+  'media-folder.create': 'Media folder created',
+  'media-folder.update': 'Media folder updated',
+  'media-folder.delete': 'Media folder deleted',
+  'user.create': 'Admin user created',
+  'user.update': 'Admin user updated',
+  'user.delete': 'Admin user deleted',
+  'role.create': 'Role created',
+  'role.update': 'Role updated',
+  'role.delete': 'Role deleted',
+  'permission.create': 'Permission created',
+  'permission.update': 'Permission updated',
+  'permission.delete': 'Permission deleted',
+  'admin.auth.success': 'Login',
+  'admin.logout': 'Logout',
+};
+
+export const AUTH_ACTIONS = new Set(['admin.auth.success', 'admin.logout']);

@@ -1,0 +1,78 @@
+{
+  "name": "strapi-plugin-audit-logging",
+  "version": "1.0.0",
+  "description": "Audit logs for Strapi 5 Community Edition: track content changes, media, users, roles, permissions and admin logins.",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "strapi-5",
+    "audit",
+    "audit-log",
+    "audit-logs",
+    "activity-log",
+    "history"
+  ],
+  "license": "MIT",
+  "author": "Santhosh Sivan <geethasivan246@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanthoshSivan-Dev/strapi-plugin-audit-logging.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SanthoshSivan-Dev/strapi-plugin-audit-logging/issues"
+  },
+  "homepage": "https://github.com/SanthoshSivan-Dev/strapi-plugin-audit-logging#readme",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "source": "./admin/src/index.js",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "source": "./server/src/index.js",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test": "node --test tests/*.test.mjs",
+    "prepublishOnly": "npm test && npm run build && npm run verify"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^2.0.0"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^6.1.1",
+    "@strapi/strapi": "^5.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0",
+    "styled-components": "^6.1.0"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-router-dom": "^6",
+    "styled-components": "^6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "audit-logging",
+    "displayName": "Audit Logging",
+    "description": "Tracks content changes and admin authentication events for traceability (Community Edition)."
+  }
+}
