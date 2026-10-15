@@ -1,6 +1,6 @@
 {
   "name": "strapi-plugin-audit-logging",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Audit logs for Strapi 5 Community Edition: track content changes, media, users, roles, permissions and admin logins.",
   "keywords": [
     "strapi",
