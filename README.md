@@ -1,4 +1,11 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/SanthoshSivan-Dev/strapi-plugin-audit-logging/main/assets/logo.png" alt="Audit Logging logo" width="120" height="120">
+</p>
+
 # strapi-plugin-audit-logging
+
+[![npm version](https://img.shields.io/npm/v/strapi-plugin-audit-logging.svg)](https://www.npmjs.com/package/strapi-plugin-audit-logging)
+[![license](https://img.shields.io/npm/l/strapi-plugin-audit-logging.svg)](https://github.com/SanthoshSivan-Dev/strapi-plugin-audit-logging/blob/main/LICENSE)
 
 Audit logs for **Strapi 5 Community Edition**. See who created, updated, published or
 deleted content, who changed users, roles and permissions, and who logged in and out of
