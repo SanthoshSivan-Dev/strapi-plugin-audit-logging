@@ -4,3 +4,7 @@ coverage/
 *.log
 .DS_Store
 .env
+
+# Local notes (not committed)
+chat-history.md
+audit-logging-handoff.md
